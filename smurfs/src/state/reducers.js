@@ -1,7 +1,7 @@
-import * as types from './actionTypes';
+import * as types from './actionType';
 
 const initialValue = 0;
-export function smurfReducer (state = initialValue, action) {
+export default function smurfReducer (state = initialValue, action) {
     switch (action.type) {
         case types.ADD_SMURF:
             return
@@ -9,3 +9,4 @@ export function smurfReducer (state = initialValue, action) {
             return state;
     }
 }
+
